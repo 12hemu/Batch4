@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <script>
+
+        function Gsal() {
+            let a = document.getElementById("t1").value;
+            let b = document.getElementById("t2").value;
+            let c = document.getElementById("t3").value;
+            let d = parseInt(a) + parseInt(b) - parseInt(c);
+            document.getElementById("t4").innerHTML = d;
+        }
+
+    </script>
+
+
+    <style>
+        .d1 {
+
+            border: 2px solid rgb(213, 186, 188);
+            width: 300px;
+            padding: 50px;
+            margin-left: 500px;
+            margin-top: 100px;
+            background-color: white(8, 26, 66);
+            color: green(251, 249, 249);
+        }
+    </style>
+</head>
+
+<div class="d1">
+    <h1 align="center">Salary Calculator </h1>
+    <p>
+    <h4 align="center"></h4>
+    <input type="text" placeholder="Employee id" /><br><br>
+    <input type="text" placeholder="Name" /><br><br>
+    <input type="text" placeholder=" salary" id="t1" /><br><br>
+    <input type="text" placeholder="hra" id="t2" /><br><br>
+    <input type="text" placeholder="pf" id="t3" /><br><br>
+
+    <b>
+        <h5>Gross salary</h5>
+    </b>
+    <p id="t4" color="black"></p>
+
+    <button onclick="Gsal()">calculate</button><br><br>
+</div>
+</body>
+
+</html>
